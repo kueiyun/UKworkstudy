@@ -15,12 +15,18 @@
     header {
       background-color: #003366;
       color: #fff;
-      padding: 2rem;
-      text-align: center;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    .logo {
+      max-height: 60px;
+    }
+    .header-contact {
+      text-align: right;
+      font-size: 0.9rem;
     }
     .hero {
       background-image: url('https://images.unsplash.com/photo-1581091012184-7c046b2f6b6a');
@@ -65,9 +71,15 @@
     footer {
       background-color: #003366;
       color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ffd700;
+      text-decoration: underline;
     }
     img.banner {
       width: 100%;
@@ -78,8 +90,11 @@
 </head>
 <body>
   <header>
-    <h1>英國YMS帶薪實習計畫</h1>
-    <p>立即申請，展開你在英國的工作旅程！</p>
+    <img class="logo" src="logo.png" alt="EngHub Logo">
+    <div class="header-contact">
+      <p>新北市三峽區大德路103號5樓</p>
+      <p>電話：0968-252-677</p>
+    </div>
   </header>
 
   <div class="hero"></div>
@@ -135,7 +150,10 @@
   </div>
 
   <footer>
-    若您有任何問題，請洽：ukworkstudy@gmail.com ｜ 由 YMS專案團隊 提供
+    <div>新北市三峽區大德路103號5樓｜電話：0968-252-677</div>
+    <div>
+      <a href="https://www.facebook.com/Enghubreading" target="_blank">FB 粉絲專頁</a>
+    </div>
   </footer>
 </body>
 </html>
