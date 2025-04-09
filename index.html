@@ -15,7 +15,7 @@
     }
     header {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       padding: 1rem 2rem;
       background-color: #ffffff;
@@ -24,16 +24,20 @@
     .logo {
       max-height: 60px;
     }
-    .header-contact {
-      text-align: right;
-      font-size: 0.9rem;
-      color: #333;
-    }
     .hero {
       background-image: url('https://images.unsplash.com/photo-1581091012184-7c046b2f6b6a');
       background-size: cover;
       background-position: center;
-      height: 320px;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
     }
     .container {
       max-width: 1100px;
@@ -116,13 +120,11 @@
 <body>
   <header>
     <img class="logo" src="logo.png" alt="EngHub Logo">
-    <div class="header-contact">
-      <p>新北市三峽區大德路103號5樓</p>
-      <p>電話：0968-252-677</p>
-    </div>
   </header>
 
-  <div class="hero"></div>
+  <div class="hero">
+    英國YMS帶薪實習計畫 — 打造你的國際職涯起點
+  </div>
 
   <main class="container">
     <h2>專業英語 + 保證就業實習計畫</h2>
@@ -174,7 +176,7 @@
   </main>
 
   <footer>
-    <div>新北市三峽區大德路103號5樓｜電話：0968-252-677</div>
+    <div>電話：0968-252-677</div>
     <div>
       <a href="https://www.facebook.com/Enghubreading" target="_blank">
         <i class="fab fa-facebook-square"></i> EngHub 粉絲專頁
