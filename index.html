@@ -1,75 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YMS UK Paid Hospitality Work Placement</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UK 帶薪工作實習 YMS 計畫</title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header, footer { background: #222; color: #fff; padding: 20px; text-align: center; }
-    nav a { margin: 0 10px; color: #fff; text-decoration: none; }
-    .container { max-width: 1000px; margin: auto; padding: 20px; background: #fff; }
-    h1, h2 { color: #444; }
-    .btn { display: inline-block; padding: 10px 20px; background: #007bff; color: #fff; text-decoration: none; border-radius: 5px; }
-    .btn:hover { background: #0056b3; }
-    .languages { margin-top: 10px; }
-    .languages a { margin-right: 10px; font-size: 14px; }
-    img { max-width: 100%; height: auto; margin: 20px 0; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1590487982672-c11de2c2083b') no-repeat center center;
+      background-size: cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 5px black;
+    }
+    header h1 {
+      font-size: 3em;
+      text-align: center;
+    }
+    nav {
+      background: white;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+    }
+    nav button {
+      border: none;
+      background: #e0e0e0;
+      padding: 0.5em 1em;
+      cursor: pointer;
+    }
+    section {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    .apply-btn {
+      display: block;
+      width: fit-content;
+      margin: 2em auto;
+      background: #0066cc;
+      color: white;
+      padding: 1em 2em;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+      margin-top: 2em;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #eee;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>UK Paid Hospitality Work Placement (YMS)</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#steps">Steps</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="languages">
-      <a href="#">中文</a>
-      <a href="#">日本語</a>
-      <a href="#">한국어</a>
-      <a href="#">English</a>
-    </div>
-  </header>
-  <div class="container">
-    <section id="about">
-      <h2>What is YMS?</h2>
-      <p>The Youth Mobility Scheme (YMS) allows young people from countries like Taiwan, Japan, South Korea, and more to work and study in the UK for up to 2 years.</p>
-      <p>This programme combines 4-16 weeks of English study (B2 level required) with a paid placement in hospitality (e.g. Marriott, Sheraton, Hilton).</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/London_Marriott_Hotel_County_Hall.jpg" alt="Hotel Placement">
-      <p><strong>Placement roles include:</strong> Reception, Housekeeping, Kitchen Porter, F&B, Marketing, Events, and more.</p>
-    </section>
 
-    <section id="steps">
-      <h2>Steps to Join</h2>
-      <ol>
-        <li>Apply for the YMS visa</li>
-        <li>Reach B2 level English (minimum 4 weeks study at Malvern House)</li>
-        <li>Submit CV and do interview</li>
-        <li>Get matched to paid work placement (min. 6 months)</li>
-        <li>Gain UK work experience and improve your employability</li>
-      </ol>
-    </section>
+<header>
+  <h1>UK 帶薪工作實習 YMS 計畫</h1>
+</header>
 
-    <section id="pricing">
-      <h2>Sample Prices</h2>
-      <p><strong>London (8 weeks study):</strong> £4,450<br>
-         <strong>Manchester (8 weeks study):</strong> £3,970<br>
-         * Placement fee included. Prices vary based on duration and location.
-      </p>
-    </section>
+<nav>
+  <button onclick="alert('中文版本')">中文</button>
+  <button onclick="alert('English version coming soon')">English</button>
+  <button onclick="alert('日本語バージョン準備中')">日本語</button>
+  <button onclick="alert('한국어 버전 준비 중')">한국어</button>
+</nav>
 
-    <section id="contact">
-      <h2>Contact & Apply</h2>
-      <p>Email: <a href="mailto:bookings@malvernplc.com">bookings@malvernplc.com</a></p>
-      <p>Apply here: <a class="btn" href="https://forms.gle/eCmmxvLozpDAps7N8" target="_blank">Online Registration Form</a></p>
-      <p>Official visa info: <a href="https://www.gov.uk/youth-mobility" target="_blank">UK Gov YMS Visa</a></p>
-    </section>
+<section>
+  <h2>什麼是 YMS 計畫？</h2>
+  <p>
+    本計畫招募符合資格的青年赴英國參與為期八週的「帶薪工作實習」計畫。需具備 B2 英文程度，並完成四週英語課程（English for Hospitality）。工作內容與旅宿業相關。
+  </p>
+
+  <a class="apply-btn" href="https://forms.gle/eCmmxvLozpDAps7N8" target="_blank">立即報名</a>
+
+  <h3>實習生活一瞥</h3>
+  <div class="gallery">
+    <img src="https://source.unsplash.com/featured/?uk,job" alt="UK work">
+    <img src="https://source.unsplash.com/featured/?london,hospitality" alt="hospitality">
+    <img src="https://source.unsplash.com/featured/?student,internship" alt="student">
   </div>
-  <footer>
-    <p>&copy; 2025 Malvern House x Professionals UK</p>
-  </footer>
+</section>
+
+<footer>
+  &copy; 2025 UK YMS Work Study Program ｜ 由你來體驗英國生活
+</footer>
+
 </body>
 </html>
